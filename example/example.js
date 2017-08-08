@@ -7,6 +7,9 @@ import ReactDom from "react-dom";
 //this project
 import ReactTournamentBracket from '/react/src/js/index';
 
+const e = () => {console.log('FJDLKSFJKDJKLJKFDSLJ')}
+e()
+
 //render example component
 ReactDom.render(
     <ReactTournamentBracket />,
