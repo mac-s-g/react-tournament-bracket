@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Faceoff from './components/Faceoff'
+
 require('/react/src/style/scss/global.scss');
 
 export default class extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props)
         this.init(props);
     }
 
@@ -14,7 +15,9 @@ export default class extends React.Component {
     state = {}
 
     //all acceptable props and default values
-    defaults = {}
+    defaults = {
+        teams: []
+    }
 
     init = (props) => {
         for (let i in this.defaults) {
@@ -32,7 +35,7 @@ export default class extends React.Component {
     }
 
     render() {
-        const {state} = this;
+        const {teams} = this.state;
         return (<div>this is your entrypoint</div>);
     }
 
