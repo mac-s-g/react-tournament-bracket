@@ -16,7 +16,8 @@ export default class extends React.Component {
 
     //all acceptable props and default values
     defaults = {
-        teams: []
+        teams: [],
+        level: 0,
     }
 
     init = (props) => {
@@ -35,8 +36,12 @@ export default class extends React.Component {
     }
 
     render() {
-        const {teams} = this.state;
-        return (<div>this is your entrypoint</div>);
+        const {teams, level} = this.state;
+        const {}
+
+        return (
+
+        );
     }
 
 }
